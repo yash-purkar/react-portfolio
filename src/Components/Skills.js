@@ -25,19 +25,19 @@ export const Skills = () => {
             <p className='my-4'>HTML</p>
           </div>
           <div>
-            <img className='w-20 mx-auto' src={CSS} alt="HTML ICON" />
+            <img className='w-20 mx-auto' src={CSS} alt="CSS ICON" />
             <p className='my-4'>CSS</p>
           </div>
           <div>
-            <img className='w-20 mx-auto' src={JS} alt="HTML ICON" />
+            <img className='w-20 mx-auto' src={JS} alt="JS ICON" />
             <p className='my-4'>JavaScript</p>
           </div>
           <div>
-            <img className='w-20 mx-auto' src={ReactImg} alt="HTML ICON" />
+            <img className='w-20 mx-auto' src={ReactImg} alt="REACT ICON" />
             <p className='my-4'>React Js</p>
           </div>
           <div>
-            <img className='w-20 mx-auto' src={TailwindImg} alt="HTML ICON" />
+            <img className='w-20 mx-auto' src={TailwindImg} alt="TAILWIND ICON" />
             <p className='my-4'>Tailwind CSS</p>
           </div>
           <div>
