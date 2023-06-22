@@ -1,17 +1,16 @@
-import { About } from "./Components/About";
+
 import { Home } from "./Components/Home";
 import { Navbar } from "./Components/Navbar";
 import { HomeProjects } from "./Components/HomeProjects";
-import { Skills } from "./Components/Skills";
+import { AboutSkills } from "./Components/AboutSkills";
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="App font-mono">
       <Navbar />
       <Home />
-      <About />
-      <Skills />
+      <AboutSkills />
       <HomeProjects />
     </div>
   );

@@ -1,6 +1,4 @@
 import React from 'react'
-import { AiOutlineProject } from 'react-icons/ai'
-import QuickDealIcon from '../assets/quickdeal-icon.png'
 import QuickDealImg from '../assets/quickdeal-pic.png'
 import QuickTweetImg from '../assets/quicktweet-pic.png'
 import HTML from '../assets/html.png'
@@ -11,7 +9,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi'
 export const HomeProjects = () => {
   return (
     <div name="home-projects" className='w-full md:h-screen text-gray-300 bg-slate-950'>
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full  md:h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 border-[#87CEEB]'>Projects</p>
           <p className='py-6'>Check out some of my recent projects</p>
@@ -21,7 +19,7 @@ export const HomeProjects = () => {
         <div className='grid grid-cols-1 gap-10'>
 
           {/* project card */}
-          <div className='bg-gray-900 mx-5 p-5 rounded-xl flex flex-col md:flex-row items-center justify-around'>
+          <div className='bg-slate-900 mx-5 p-5 rounded-xl flex flex-col md:flex-row items-center justify-around'>
             <div>
               <img className='w-[350px] m-auto my-1 rounded-lg' src={QuickDealImg} alt="app-img" />
             </div>
@@ -50,7 +48,7 @@ export const HomeProjects = () => {
             </div>
           </div>
           {/*  */}
-          <div className='bg-gray-900 mx-5 p-5 rounded-xl flex flex-col md:flex-row items-center justify-around'>
+          <div className='bg-slate-900 mx-5 p-5 rounded-xl flex flex-col md:flex-row items-center justify-around'>
 
             <div className='flex flex-col items-center'>
               <h3 className='text-[#87CEEB] text-lg md:text-2xl mb-3 text-center font-bold'>

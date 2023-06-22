@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <div className='fixed w-full h-[70px] flex justify-between items-center px-4 bg-slate-950 text-gray-300' >
       <div>
-        <h1 className=''>Yash Purkar</h1>
+        <h1 className='text-[#87CEEB] font-bold text-2xl'>Yash Purkar</h1>
       </div>
 
       {/* after md screen it will be flex */}
@@ -21,11 +21,6 @@ export const Navbar = () => {
         <li>
           <Link to="about" smooth={true} duration={500}>
             About
-          </Link>
-        </li>
-        <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
           </Link>
         </li>
         <li>
@@ -51,11 +46,6 @@ export const Navbar = () => {
         <li className='py-4 text-3xl'>
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
-          </Link>
-        </li>
-        <li className='py-4 text-3xl'>
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
           </Link>
         </li>
         <li className='py-4 text-3xl'>
