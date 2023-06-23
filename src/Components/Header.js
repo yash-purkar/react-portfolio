@@ -1,8 +1,9 @@
 import React from 'react'
+import { FaDownload } from 'react-icons/fa'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Link } from 'react-scroll'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-
+import resume from '../assets/yashpurkar.pdf'
 
 export const Header = () => {
   const [text] = useTypewriter({
@@ -19,14 +20,19 @@ export const Header = () => {
           <span><Cursor /></span>
         </h2>
         <p className='text-[#8892b0] py-4 max-w-[700px] '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, enim. Odit inventore nemo voluptatum eius dolorum sapiente laudantium nisi veritatis perspiciatis beatae.</p>
-        <div>
+        <div className='flex gap-5'>
           <Link to="home-projects" smooth={true} duration={500}>
             <button className='group bg-[#87CEEB] border-2  border-[#87CEEB] text-slate-950 px-6 py-3 my-2 flex items-center duration-200'>
               View Projects
               <span className='ml-2 group-hover:rotate-90 duration-300'><HiArrowNarrowRight /></span>
             </button>
           </Link>
+          <a href={resume} download={true} className='bg-[#87CEEB] border-2  border-[#87CEEB] text-slate-950 px-6 py-3 my-2 flex items-center duration-200'>
+            Resume <FaDownload className='ml-1' />
+
+          </a>
         </div>
+
       </div>
 
     </div>
