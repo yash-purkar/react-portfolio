@@ -10,6 +10,7 @@ export const Navbar = () => {
   return (
     <div className='fixed w-full h-[70px] flex justify-between items-center px-4 bg-slate-950 text-gray-300' >
       <div>
+        <img src="" alt="" />
         <h1 className='text-[#87CEEB] font-bold text-2xl'>Yash Purkar</h1>
       </div>
 
@@ -59,7 +60,7 @@ export const Navbar = () => {
           </Link>
         </li>
         <li className='py-4 text-3xl'>
-          <Link to="blogs" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="blogs" smooth={true} duration={500}>
             Blogs
           </Link>
         </li>
