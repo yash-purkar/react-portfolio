@@ -11,12 +11,12 @@ export const AboutSkills = () => {
   return (
     <div name="about" className='bg-white  text-slate-900 w-full min-h-fit lg:h-screen'>
 
-      <div className='max-w-[1000px] mx-auto p-4 flex flex-col lg:flex-row items-center justify-around    lg:h-full '>
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center lg:flex-row items-center  lg:justify-around    lg:h-full '>
 
-        <div className='mr-24'>
-          <h2 className='mb-10 text-4xl font-bold'>Something about <span className='text-[#87ceeb]'>me</span> and my <span className='text-[#87ceeb]'>skills</span></h2>
-          <p className='w-96 text-lg  mb-8  text-slate-900'>Hello I'm Yash, Student Of Computer Application Learning Full Stack Web Devlopement. I Love Exchanging Ideas And Spreading Knowledge And Positivity.</p>
-          <img src={img} alt="" className='w-[250px] md:w-[300px]' />
+        <div className='lg:mr-24 text-center'>
+          <h2 className='mb-10 text-4xl px-2 font-bold'>Something about <span className='text-[#87ceeb]'>me</span> and my <span className='text-[#87ceeb]'>skills</span></h2>
+          <p className='w-96 mx-auto text-lg  mb-8  text-slate-900'>Hello I'm Yash, Student Of Computer Application Learning Full Stack Web Devlopement. I Love Exchanging Ideas And Spreading Knowledge And Positivity.</p>
+          <img src={img} alt="" className='w-[250px] md:w-[300px] mx-auto' />
         </div>
 
         <div className=' mt-3 md:mt-0 text-slate-900 '>

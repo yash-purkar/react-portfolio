@@ -16,7 +16,7 @@ export const HomeBlogs = () => {
           {/* blog card */}
           {
             BlogsData?.map(({ name, img, link }) => (
-              <div className='shadow-md rounded-md p-5 '>
+              <div key={name} className='shadow-md rounded-md p-5'>
                 <img className='w-[300px] h-[150px]' src={img} alt="blog-img" />
                 <div>
                   <h3 className='text-lg font-bold my-2'>{name}</h3>
