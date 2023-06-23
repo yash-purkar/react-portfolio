@@ -12,7 +12,7 @@ export const Header = () => {
   })
 
   return (
-    <div name="home" className='w-full h-screen bg-slate-950'>
+    <div name="home" className='w-full  h-screen bg-slate-950'>
       <div className='max-w-[1000px] mx-auto px-8  flex flex-col justify-center h-full '>
         <h1 className='text-[#87CEEB]'>Hi, my name is</h1>
         <h2 className='text-4xl sm:text-6xl font-bold text-[#ccd6f6]'>Yash Purkar</h2>
