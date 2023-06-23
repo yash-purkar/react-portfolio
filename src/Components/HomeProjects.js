@@ -5,8 +5,12 @@ import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
 import ReactImg from '../assets/react.png'
 import { HiArrowNarrowRight } from 'react-icons/hi'
+import { useNavigate } from 'react-router-dom/dist'
 
 export const HomeProjects = () => {
+  const navigate = useNavigate();
+
+  const handleViewAllProjects = () => navigate("/projects")
   return (
     <div name="home-projects" className='w-full md:h-screen text-gray-300 bg-slate-950'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full  md:h-full'>
@@ -19,9 +23,9 @@ export const HomeProjects = () => {
         <div className='grid grid-cols-1 gap-10'>
 
           {/* project card */}
-          <div className='bg-slate-900 mx-5 p-5 rounded-xl flex flex-col md:flex-row items-center justify-around'>
+          <div className='bg-gray-800 mx-5 p-5 rounded-sm flex flex-col md:flex-row items-center justify-around'>
             <div>
-              <img className='w-[350px] m-auto my-1 rounded-lg' src={QuickDealImg} alt="app-img" />
+              <img className='w-[350px] m-auto my-1 rounded-sm' src={QuickDealImg} alt="app-img" />
             </div>
             <div className='flex flex-col items-center'>
               <h3 className='text-[#87CEEB] text-lg md:text-2xl mb-3 text-center font-bold'>
@@ -48,7 +52,7 @@ export const HomeProjects = () => {
             </div>
           </div>
           {/*  */}
-          <div className='bg-slate-900 mx-5 p-5 rounded-xl flex flex-col md:flex-row items-center justify-around'>
+          <div className='bg-gray-800 mx-5 p-5 rounded-sm flex flex-col md:flex-row items-center justify-around'>
 
             <div className='flex flex-col items-center'>
               <h3 className='text-[#87CEEB] text-lg md:text-2xl mb-3 text-center font-bold'>
@@ -74,7 +78,7 @@ export const HomeProjects = () => {
               </div>
             </div>
             <div>
-              <img className='w-[350px] m-auto my-1 rounded-lg' src={QuickTweetImg} alt="app-img" />
+              <img className='w-[350px] m-auto my-1 rounded-sm' src={QuickTweetImg} alt="app-img" />
             </div>
           </div>
 
@@ -82,7 +86,7 @@ export const HomeProjects = () => {
 
 
         <div className='mt-8 self-center '>
-          <button className='bg-[#87CEEB] border-2  border-[#87CEEB] text-slate-950 px-4 md:px-6 py-1 md:py-2 my-2 flex items-center hover:bg-[#5ed0fe] duration-200'>View All Projects
+          <button onClick={handleViewAllProjects} className='bg-[#87CEEB] border-2  border-[#87CEEB] text-slate-950 px-4 md:px-6 py-1 md:py-2 my-2 flex items-center hover:bg-[#5ed0fe] duration-200'>View All Projects
             <span className='ml-2 duration-300'><HiArrowNarrowRight /></span>
           </button>
         </div>
