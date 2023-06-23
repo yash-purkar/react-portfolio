@@ -34,7 +34,7 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500}>Contact</Link>
+          <Link to="footer" smooth={true} duration={500}>Contact</Link>
         </li>
       </ul>
 
@@ -64,7 +64,7 @@ export const Navbar = () => {
           </Link>
         </li>
         <li className='py-4 text-3xl'>
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>Contact</Link>
+          <Link onClick={handleClick} to="footer" smooth={true} duration={500}>Contact</Link>
         </li>
       </ul>
 
