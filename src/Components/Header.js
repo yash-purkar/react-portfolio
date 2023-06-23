@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 
-export const Home = () => {
+export const Header = () => {
   const [text] = useTypewriter({
     words: ['am a frontend developer.', 'love to code.', 'like to make projects.'],
     loop: {}

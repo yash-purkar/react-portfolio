@@ -14,7 +14,7 @@ export const Navbar = () => {
       </div>
 
       {/* after md screen it will be flex */}
-      <ul className='hidden md:flex'>
+      <ul className='hidden md:flex md:text-[1.1rem]'>
         <li>
           <Link to="home" smooth={true} duration={500}>Home</Link>
         </li>
@@ -58,7 +58,7 @@ export const Navbar = () => {
             Projects
           </Link>
         </li>
-        <li>
+        <li className='py-4 text-3xl'>
           <Link to="blogs" smooth={true} duration={500}>
             Blogs
           </Link>

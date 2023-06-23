@@ -1,21 +1,14 @@
-
-import { Home } from "./Components/Home";
-import { Navbar } from "./Components/Navbar";
-import { HomeProjects } from "./Components/HomeProjects";
-import { AboutSkills } from "./Components/AboutSkills";
-import { HomeBlogs } from "./Components/HomeBlogs";
-import { Footer } from "./Components/Footer";
-
+import { Home } from "./Pages/Home";
+import { Routes, Route } from 'react-router-dom'
+import { Projects } from "./Pages/Projects";
 
 function App() {
   return (
-    <div className="App font-mono">
-      <Navbar />
-      <Home />
-      <AboutSkills />
-      <HomeProjects />
-      <HomeBlogs />
-      <Footer />
+    <div style={{ fontFamily: "Montserrat" }}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
     </div>
   );
 }
