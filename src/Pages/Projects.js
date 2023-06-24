@@ -26,7 +26,7 @@ export const Projects = () => {
 
       <div className=' max-w-[1000px] mx-auto h-full bg-slate-950  last:mb-0'>
         {
-          ProjectsData?.map(({ name, img, description, link, sourceLink }, i) => {
+          ProjectsData?.map(({ name, img, description, link, sourceLink, technologies }, i) => {
 
             return (
               <div className={`${i % 2 === 0 ? "bg-[#0f172a]" : "bg-slate-950"} mx-5 p-5  flex flex-col md:flex-row items-center justify-around mt-12`}>
@@ -38,15 +38,11 @@ export const Projects = () => {
                     {name}</h3>
                   <p className='mb-3 w-[88%] text-center text-[1.070rem] text-white'>{description}</p>
                   <div className='flex gap-4 mb-5'>
-                    {/* <span >
-                      <img className='w-5 h-5' src={img} alt="HTML ICON" />
-                    </span> */}
-                    {/* <span>
-                      <img className='w-5 h-5' src={CSS} alt="CSS ICON" />
-                    </span>
-                    <span>
-                      <img className='w-5 h-5' src={ReactImg} alt="REACT ICON" />
-                    </span> */}
+                    {
+                      technologies?.map(tech => <span >
+                        <img className='w-5 h-5 md:w-7 md:h-7' src={tech} alt={tech} />
+                      </span>)
+                    }
 
                   </div>
 
