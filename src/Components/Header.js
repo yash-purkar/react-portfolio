@@ -19,7 +19,7 @@ export const Header = () => {
         <h2 className='text-4xl sm:text-6xl font-bold text-[#8892b0]'>I {text}
           <span><Cursor /></span>
         </h2>
-        <p className='text-[#8892b0] py-4  max-w-[700px] '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, enim. Odit inventore nemo voluptatum eius dolorum sapiente laudantium nisi veritatis perspiciatis beatae.</p>
+        <p className='text-[#8892b0] py-4  max-w-[700px] '>An Aspiring Web Developer. I learn new things and make good projects.</p>
         <div className='flex gap-5 items-center'>
           <Link to="home-projects" smooth={true} duration={500}>
             <button className='group bg-[#87CEEB] border-2  border-[#87CEEB] text-slate-950 px-1 py-1 md:px-6 md:py-3 my-2 flex items-center duration-200'>
