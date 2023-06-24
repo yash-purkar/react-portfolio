@@ -1,9 +1,11 @@
 import QuickDealImg from '../assets/quickdeal-pic.png'
 import QuickTweetImg from '../assets/quicktweet-pic.png'
 import MailAppImg from '../assets/emailapp-pic.png'
+import TodoAppImg from '../assets/todo-pic.png'
 import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
 import ReactJs from '../assets/react.png'
+import JavaScript from '../assets/javascript.png'
 
 export const ProjectsData = [
   {
@@ -29,5 +31,13 @@ export const ProjectsData = [
     technologies: [HTML, CSS, ReactJs],
     link: "https://email-webapp.netlify.app/",
     sourceLink: "https://github.com/yash-purkar/email-app"
+  },
+  {
+    name: "Todo App",
+    img: TodoAppImg,
+    description: "TODO app to save your to do tasks.",
+    technologies: [HTML, CSS, JavaScript],
+    link: "https://yashpurkar-todo-app.netlify.app/",
+    sourceLink: "https://github.com/yash-purkar/todo_app"
   },
 ]
