@@ -12,7 +12,7 @@ export const ProjectsData = [
     name: "QuickDeal - An Ecommerce App",
     img: QuickDealImg,
     description: "An e-commerce app where users can buy online cloths.",
-    technologies: [HTML, CSS, ReactJs],
+    technologies: [ReactJs, CSS],
     link: "https://quickdeal-ecom.netlify.app/",
     sourceLink: "https://github.com/yash-purkar/QuickDeal"
   },
@@ -20,7 +20,7 @@ export const ProjectsData = [
     name: "QuickTweet - Social Media App",
     img: QuickTweetImg,
     description: "The social media app where users can connect with people.",
-    technologies: [HTML, CSS, ReactJs],
+    technologies: [ReactJs, CSS],
     link: "https://quicktweet.netlify.app/",
     sourceLink: "https://github.com/yash-purkar/QuickTweet/tree/master"
   },
@@ -28,7 +28,7 @@ export const ProjectsData = [
     name: "Mail App - An Email App",
     img: MailAppImg,
     description: "An email app where users can see there mails.",
-    technologies: [HTML, CSS, ReactJs],
+    technologies: [ReactJs, CSS],
     link: "https://email-webapp.netlify.app/",
     sourceLink: "https://github.com/yash-purkar/email-app"
   },
@@ -36,7 +36,7 @@ export const ProjectsData = [
     name: "Todo App",
     img: TodoAppImg,
     description: "TODO app to save your to do tasks.",
-    technologies: [HTML, CSS, JavaScript],
+    technologies: [ReactJs, CSS],
     link: "https://yashpurkar-todo-app.netlify.app/",
     sourceLink: "https://github.com/yash-purkar/todo_app"
   },

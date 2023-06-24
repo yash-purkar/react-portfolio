@@ -32,16 +32,12 @@ export const HomeProjects = () => {
                 QuickDeal - An Ecommerce App</h3>
               <p className='mb-3 w-[88%] text-center'> Grocery Items Detection using Tenserflow.js and IBM Watson.</p>
               <div className='flex gap-4 mb-5'>
-                <span >
-                  <img className='w-5 h-5' src={HTML} alt="HTML ICON" />
+                <span>
+                  <img className='w-5 h-5' src={ReactImg} alt="REACT ICON" />
                 </span>
                 <span>
                   <img className='w-5 h-5' src={CSS} alt="CSS ICON" />
                 </span>
-                <span>
-                  <img className='w-5 h-5' src={ReactImg} alt="REACT ICON" />
-                </span>
-
               </div>
 
               <div className='flex'>
@@ -59,16 +55,12 @@ export const HomeProjects = () => {
                 QuickTweet - Social Media App</h3>
               <p className='mb-3 w-[88%] text-center'> Grocery Items Detection using Tenserflow.js and IBM Watson.</p>
               <div className='flex gap-4 mb-5'>
-                <span >
-                  <img className='w-5 h-5' src={HTML} alt="HTML ICON" />
+                <span>
+                  <img className='w-5 h-5' src={ReactImg} alt="REACT ICON" />
                 </span>
                 <span>
                   <img className='w-5 h-5' src={CSS} alt="CSS ICON" />
                 </span>
-                <span>
-                  <img className='w-5 h-5' src={ReactImg} alt="REACT ICON" />
-                </span>
-
               </div>
 
               <div className='flex'>
