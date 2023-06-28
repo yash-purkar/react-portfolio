@@ -12,7 +12,7 @@ export const HomeProjects = () => {
 
   const handleViewAllProjects = () => navigate("/projects")
   return (
-    <div name="home-projects" className='w-full md:h-screen text-gray-300 bg-slate-950'>
+    <div name="home-projects" className='w-full md:h-[100%] text-gray-300 bg-slate-950'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full  md:h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 border-[#87CEEB]'>Projects</p>
