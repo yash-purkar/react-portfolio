@@ -30,7 +30,7 @@ export const HomeProjects = () => {
             <div className='flex flex-col items-center'>
               <h3 className='text-[#87CEEB] text-lg md:text-2xl mb-3 text-center font-bold'>
                 QuickDeal - An Ecommerce App</h3>
-              <p className='mb-3 w-[88%] text-center'> Grocery Items Detection using Tenserflow.js and IBM Watson.</p>
+              <p className='mb-3 w-[88%] text-center'>An e-commerce app where users can buy online cloths.</p>
               <div className='flex gap-4 mb-5'>
                 <span>
                   <img className='w-5 h-5' src={ReactImg} alt="REACT ICON" />
@@ -53,7 +53,7 @@ export const HomeProjects = () => {
             <div className='flex flex-col items-center'>
               <h3 className='text-[#87CEEB] text-lg md:text-2xl mb-3 text-center font-bold'>
                 QuickTweet - Social Media App</h3>
-              <p className='mb-3 w-[88%] text-center'> Grocery Items Detection using Tenserflow.js and IBM Watson.</p>
+              <p className='mb-3 w-[88%] text-center'>The social media app where users can connect with people.</p>
               <div className='flex gap-4 mb-5'>
                 <span>
                   <img className='w-5 h-5' src={ReactImg} alt="REACT ICON" />

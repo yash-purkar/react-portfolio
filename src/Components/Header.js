@@ -27,7 +27,7 @@ export const Header = () => {
               <span className='ml-2 group-hover:rotate-90 duration-300'><HiArrowNarrowRight /></span>
             </button>
           </Link>
-          <a href={resume} download={true} className='bg-[#87CEEB] border-2  border-[#87CEEB] text-slate-950 px-1 py-1 md:px-6 md:py-3 md:my-2 flex items-center duration-200'>
+          <a href={resume} download={`yash_purkar_frontend_developer.pdf`} className='bg-[#87CEEB] border-2  border-[#87CEEB] text-slate-950 px-1 py-1 md:px-6 md:py-3 md:my-2 flex items-center duration-200'>
             Resume <FaDownload className='ml-1' />
 
           </a>
