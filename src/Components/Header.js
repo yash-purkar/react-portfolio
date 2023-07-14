@@ -3,7 +3,7 @@ import { FaDownload } from 'react-icons/fa'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Link } from 'react-scroll'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import resume from '../assets/Frontend_Developer.pdf'
+import resume from '../assets/Yash_Purkar_Resume.pdf'
 
 export const Header = () => {
   const [text] = useTypewriter({
