@@ -1,11 +1,12 @@
 import QuickDealImg from '../assets/quickdeal-pic.png'
 import QuickTweetImg from '../assets/quicktweet-pic.png'
 import MailAppImg from '../assets/emailapp-pic.png'
-import TodoAppImg from '../assets/todo-pic.png'
+import QuickNote from '../assets/quickNote.png'
 import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
 import ReactJs from '../assets/react.png'
 import JavaScript from '../assets/javascript.png'
+import tailwindIcon from '../assets/tailwind.png'
 
 export const ProjectsData = [
   {
@@ -25,19 +26,19 @@ export const ProjectsData = [
     sourceLink: "https://github.com/yash-purkar/QuickTweet/tree/master"
   },
   {
+    name: "QuickNote",
+    img: QuickNote,
+    description: "Notes app to save the notes.",
+    technologies: [ReactJs, tailwindIcon],
+    link: "https://quicknote-react.netlify.app/",
+    sourceLink: "https://github.com/yash-purkar/notes-app-redux"
+  },
+  {
     name: "Mail App - An Email App",
     img: MailAppImg,
     description: "An email app where users can see there mails.",
     technologies: [ReactJs, CSS],
     link: "https://email-webapp.netlify.app/",
     sourceLink: "https://github.com/yash-purkar/email-app"
-  },
-  {
-    name: "Todo App",
-    img: TodoAppImg,
-    description: "TODO app to save your to do tasks.",
-    technologies: [ReactJs, CSS],
-    link: "https://yashpurkar-todo-app.netlify.app/",
-    sourceLink: "https://github.com/yash-purkar/todo_app"
   },
 ]
