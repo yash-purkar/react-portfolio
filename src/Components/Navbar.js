@@ -1,74 +1,122 @@
-import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import { Link } from 'react-scroll'
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import logo from "../Assets/logo-1.png"
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+import { CgGitFork } from "react-icons/cg";
+import { ImBlog } from "react-icons/im";
+import {
+  AiFillStar,
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineUser,
+} from "react-icons/ai";
 
+import { CgFileDocument } from "react-icons/cg";
 
-export const Navbar = () => {
-  const [toggleNavbar, setToggleNavbar] = useState(false);
+function NavBar() {
+  const [expand, updateExpanded] = useState(false);
+  const [navColour, updateNavbar] = useState(false);
 
-  const handleClick = () => setToggleNavbar(false)
+  function scrollHandler() {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", scrollHandler);
+
   return (
-    <div className='fixed w-full h-[70px] flex justify-between items-center px-4 bg-slate-950 text-gray-300' >
-      <div>
-        <img src="" alt="" />
-        <h1 className='text-[#87CEEB] font-bold text-2xl'>Yash Purkar</h1>
-      </div>
+    <Navbar
+      expanded={expand}
+      fixed="top"
+      expand="md"
+      className={navColour ? "sticky" : "navbar"}
+    >
+      <Container>
+        <Navbar.Brand href="/" className="d-flex">
+          <img src={logo} className="img-fluid logo" alt="brand"/>
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            updateExpanded(expand ? false : "expanded");
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto" defaultActiveKey="#home">
+            <Nav.Item>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              </Nav.Link>
+            </Nav.Item>
 
-      {/* after md screen it will be flex */}
-      <ul className='hidden md:flex md:text-[1.1rem]'>
-        <li>
-          <Link to="home" smooth={true} duration={500}>Home</Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="home-projects" smooth={true} duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link to="blogs" smooth={true} duration={500}>
-            Blogs
-          </Link>
-        </li>
-        <li>
-          <Link to="footer" smooth={true} duration={500}>Contact</Link>
-        </li>
-      </ul>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/about"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              </Nav.Link>
+            </Nav.Item>
 
-      <div onClick={() => setToggleNavbar(prev => !prev)} className='md:hidden z-10 cursor-pointer' >
-        {
-          !toggleNavbar ? <FaBars /> : <FaTimes />
-        }
-      </div>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Projects
+              </Nav.Link>
+            </Nav.Item>
 
-      <ul className={`${!toggleNavbar ? "hidden" : "flex absolute top-0 left-0 w-full h-screen bg-slate-950 flex-col justify-center items-center"}`}>
-        <li className='py-4 text-3xl'>
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>Home</Link>
-        </li>
-        <li className='py-4 text-3xl'>
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className='py-4 text-3xl'>
-          <Link onClick={handleClick} to="home-projects" smooth={true} duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li className='py-4 text-3xl'>
-          <Link onClick={handleClick} to="blogs" smooth={true} duration={500}>
-            Blogs
-          </Link>
-        </li>
-        <li className='py-4 text-3xl'>
-          <Link onClick={handleClick} to="footer" smooth={true} duration={500}>Contact</Link>
-        </li>
-      </ul>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
 
-    </div>
-  )
+            <Nav.Item>
+              <Nav.Link
+                href="https://soumyajitblogs.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item className="fork-btn">
+              <Button
+                href="https://github.com/soumyajit4419/Portfolio"
+                target="_blank"
+                className="fork-btn-inner"
+              >
+                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1.1em" }} />
+              </Button>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
+
+export default NavBar;
