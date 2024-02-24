@@ -2,12 +2,48 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import quickdeal from "../../Assets/Projects/quickdeal-pic.png";
+import quicktweet from "../../Assets/Projects/quicktweet-pic.png";
+import bookit from "../../Assets/Projects/bookit-pic.png";
+import bookshelf from "../../Assets/Projects/booshelf-pic.png";
+const projects = [
+  {
+    imgPath: quickdeal,
+    isBlog: false,
+    title: "QuickDeal - An Ecommerce App",
+    description:
+      "The e-commerce app QuickDeal offers a wide range of fashion clothes for online showcasing and selling. It incorporates essential features such as cart management, wishlist management, payment integration, address management, and other key functionalities required for an e-commerce platform.",
+    githubLink: "https://github.com/yash-purkar/QuickDeal",
+    demoURL: "https://quickdeal-ecom.netlify.app/",
+  },
+  {
+    imgPath: bookit,
+    isBlog: false,
+    title: "BookIT - Hotel Booking App",
+    description:
+      "BookIt is all about making booking hotels fun and simple. It's easy, it's cool, and your perfect stay is just a click away!",
+    githubLink: "https://github.com/yash-purkar/book-it",
+    demoURL: "https://bookit-web-app.vercel.app/",
+  },
+  {
+    imgPath: quicktweet,
+    isBlog: false,
+    title: "QuickTweet - Social Media App",
+    description:
+      "About QuickTweet: This dynamic social media Webapp combines the best of Twitter and Instagram, allowing you to share your thoughts, ideas, and creativity in various formats. Post tweets, share captivating posts.",
+    githubLink: "https://github.com/yash-purkar/QuickTweet/tree/master",
+    demoURL: "https://quicktweet.netlify.app/",
+  },
+  {
+    imgPath: bookshelf,
+    isBlog: false,
+    title: "Bookshelf",
+    description:
+      "The Bookshelf app has three shelves (Currently Reading, Want to Read, Read), a search page for adding books, and ensures consistent book states between main and search pages. It allows seamless navigation and instant reflection of selections made on the search page in the user's library.",
+    githubLink: "https://github.com/yash-purkar/book-shelf",
+    demoURL: "https://bookshelf-mcr.netlify.app/",
+  },
+];
 
 function Projects() {
   return (
@@ -21,72 +57,20 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+          {projects.map(
+            ({ title, description, imgPath, isBlog, githubLink, demoURL }) => (
+              <Col md={4} className="project-card">
+                <ProjectCard
+                  imgPath={imgPath}
+                  isBlog={isBlog}
+                  title={title}
+                  description={description}
+                  ghLink={githubLink}
+                  demoLink={demoURL}
+                />
+              </Col>
+            )
+          )}
         </Row>
       </Container>
     </Container>
