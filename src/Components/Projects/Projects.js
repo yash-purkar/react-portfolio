@@ -6,7 +6,18 @@ import quickdeal from "../../Assets/Projects/quickdeal-pic.png";
 import quicktweet from "../../Assets/Projects/quicktweet-pic.png";
 import bookit from "../../Assets/Projects/bookit-pic.png";
 import bookshelf from "../../Assets/Projects/booshelf-pic.png";
+import foodordering from "../../Assets/Projects/foodordering-pic.png";
+import moviesinfo from "../../Assets/Projects/moviesinfo-pic.png";
 const projects = [
+  {
+    imgPath: quicktweet,
+    isBlog: false,
+    title: "QuickTweet - Social Media App",
+    description:
+      "About QuickTweet: This dynamic social media Webapp combines the best of Twitter and Instagram, allowing you to share your thoughts, ideas, and creativity in various formats. Post tweets, share captivating posts.",
+    githubLink: "https://github.com/yash-purkar/QuickTweet/tree/master",
+    demoURL: "https://quicktweet.netlify.app/",
+  },
   {
     imgPath: quickdeal,
     isBlog: false,
@@ -26,13 +37,13 @@ const projects = [
     demoURL: "https://bookit-web-app.vercel.app/",
   },
   {
-    imgPath: quicktweet,
+    imgPath: foodordering,
     isBlog: false,
-    title: "QuickTweet - Social Media App",
+    title: "Food Ordering App",
     description:
-      "About QuickTweet: This dynamic social media Webapp combines the best of Twitter and Instagram, allowing you to share your thoughts, ideas, and creativity in various formats. Post tweets, share captivating posts.",
-    githubLink: "https://github.com/yash-purkar/QuickTweet/tree/master",
-    demoURL: "https://quicktweet.netlify.app/",
+      "Food ordering app in React with RTK. 🚀 Seamlessly explore dishes, add to cart, and checkout effortlessly. Built for a smooth user experience using React and Redux Toolkit.",
+    githubLink: "https://github.com/yash-purkar/food-ordering-app",
+    demoURL: "https://food-ordering-app-mcr.netlify.app/",
   },
   {
     imgPath: bookshelf,
@@ -42,6 +53,16 @@ const projects = [
       "The Bookshelf app has three shelves (Currently Reading, Want to Read, Read), a search page for adding books, and ensures consistent book states between main and search pages. It allows seamless navigation and instant reflection of selections made on the search page in the user's library.",
     githubLink: "https://github.com/yash-purkar/book-shelf",
     demoURL: "https://bookshelf-mcr.netlify.app/",
+  },
+
+  {
+    imgPath: moviesinfo,
+    isBlog: false,
+    title: "Movies Info App",
+    description:
+      "Recently completed: Movie Info App in React with RTK. 🎬 Explore movies, search for your favorites, and enjoy seamless navigation. Crafted for a smooth user experience using React and Redux Toolkit",
+    githubLink: "https://github.com/yash-purkar/movies-info",
+    demoURL: "https://movies-info-webapp.netlify.app/",
   },
 ];
 
