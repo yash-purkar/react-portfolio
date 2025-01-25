@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop";
 import "./style.css";
@@ -30,8 +30,16 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Preloader load={load} />
+    <>
+      <p>
+        This website is no longer updated. Click{" "}
+        <a href="https://yashpurkar.vercel.app/" rel="noreferrer">
+          here
+        </a>{" "}
+        to visit my updated portfolio.
+      </p>
+      {/* <Router>
+     <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <NavBar />
         <ScrollToTop />
@@ -45,7 +53,8 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+    </Router>*/}
+    </>
   );
 }
 
