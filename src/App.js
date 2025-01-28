@@ -29,6 +29,13 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    (async() => {
+     const data = await  fetch("http://localhost:2525/");
+     console.log("_Data",data)
+    })();
+  },[])
+
   return (
     <>
       <p>
